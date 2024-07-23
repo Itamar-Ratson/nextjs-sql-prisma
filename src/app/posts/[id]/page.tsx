@@ -1,4 +1,5 @@
 import Post from '@/components/post';
+import UpvoteBtn from '@/components/upvote-btn';
 import { Suspense } from 'react';
 
 export default async function Page({ params }: { params: { id: string } }) {
@@ -7,6 +8,7 @@ export default async function Page({ params }: { params: { id: string } }) {
 			<Suspense fallback='Loading post...'>
 				<Post params={params} />
 			</Suspense>
+			<UpvoteBtn />
 		</main>
 	);
 }
