@@ -1,4 +1,6 @@
+'use client';
 import { createPost } from '@/actions/actions';
+import { LogoutLink } from '@kinde-oss/kinde-auth-nextjs';
 
 export default function Page() {
 	return (
@@ -14,6 +16,7 @@ export default function Page() {
 				/>
 				<button className='h-full bg-blue-500 px-5 rounded text-white'>Submit</button>
 			</form>
+			<LogoutLink>Logout</LogoutLink>
 		</main>
 	);
 }
