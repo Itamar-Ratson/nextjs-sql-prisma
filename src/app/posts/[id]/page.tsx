@@ -7,8 +7,8 @@ export default async function Page({ params }: { params: { id: string } }) {
 		<main className='px-7 pt-24 text-center'>
 			<Suspense fallback='Loading post...'>
 				<Post params={params} />
+				<UpvoteBtn />
 			</Suspense>
-			<UpvoteBtn />
 		</main>
 	);
 }
